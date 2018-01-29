@@ -1,0 +1,14 @@
+﻿<Window x:Class="Image_Reproduction.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Image_Reproduction"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel LastChildFill="True">
+        <Button Name="browseButton" DockPanel.Dock="Bottom" Content="Обзор" HorizontalAlignment="Center" Margin="0,0,0,5" Padding="5,2" FontSize="14" FontFamily="Verdana" FontWeight="Bold" BorderBrush="#FF0051FF" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" BorderThickness="3" Click="BrowseButton_Click"/>
+        <TextBlock Name="imageName" DockPanel.Dock="Bottom" Height="40" Margin="0,5" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+        <Image Name="image" DockPanel.Dock="Top" Margin="0"/>
+    </DockPanel>
+</Window>
